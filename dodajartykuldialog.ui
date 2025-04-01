@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DodajArtykulDialog</class>
+ <widget class="QDialog" name="DodajArtykulDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>240</y>
+     <width>166</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>110</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEditNazwa"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditEAN"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxJednostka">
+      <item>
+       <property name="text">
+        <string>sztuka</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>litr</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>kilogram</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>metr</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
