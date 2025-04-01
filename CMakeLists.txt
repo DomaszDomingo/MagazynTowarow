@@ -17,6 +17,9 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        dodajartykuldialog.h
+        dodajartykuldialog.cpp
+        dodajartykuldialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -27,6 +30,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         regal.h regal.cpp
         magazyn.h magazyn.cpp
         artykul.h artykul.cpp
+        dodajartykuldialog.h dodajartykuldialog.cpp
+        dodajartykuldialog.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET MagazynTowarow APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
