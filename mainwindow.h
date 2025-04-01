@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "dodajartykuldialog.h"
+#include <QMessageBox>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

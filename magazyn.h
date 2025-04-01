@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QVector>
 #include "regal.h"
+#include "artykul.h"
 
 class Magazyn : public QObject
 {
@@ -13,13 +14,18 @@ public:
     explicit Magazyn(QObject *parent = nullptr);
 
     void dodajRegal();
+    bool dodajArtykul(const Artykul& artykul);
     QVector<Regal> pobierzRegaly() const;
 
 signals:
-    void regalDodany(const QString& opis);
+    void artykulDodany(const Artykul& artykul);
+    void bladDodawania(const QString& komunikat);
 
 private:
     QVector<Regal> regaly;
+
+    bool zapiszDoCSV(const Artykul& artykul, const QString& sciezka = "artykuly.csv");
+    Polka* znajdzPierwszaWolnaPolka();
 };
 
 #endif // MAGAZYN_H
