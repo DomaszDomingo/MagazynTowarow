@@ -19,10 +19,6 @@ void MainWindow::on_pushButton_clicked()
     DodajArtykulDialog dialog(this);
     if (dialog.exec() == QDialog::Accepted) {
         Artykul nowy = dialog.pobierzArtykul();
-        // Tu możesz go dodać do półki, listy itp.
-        qDebug() << "Dodano artykuł:" << nowy.pobierzNazwe()
-                 << "| Jednostka:" << nowy.pobierzJednostka()
-                 << "| EAN:" << nowy.pobierzKodEAN();
+        // dodaj artykuł do półki, pokaż info, itp.
     }
 }
-
