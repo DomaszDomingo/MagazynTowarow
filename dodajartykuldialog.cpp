@@ -1,17 +1,12 @@
 #include "dodajartykuldialog.h"
 #include "ui_dodajartykuldialog.h"
 
-
-
 DodajArtykulDialog::DodajArtykulDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DodajArtykulDialog)
 {
     ui->setupUi(this);
     setWindowTitle("Dodaj artykuł");
-
-    // Dodajemy przykładowe jednostki do comboBoxa
-    ui->comboBoxJednostka->addItems({"sztuka", "litr", "kilogram", "metr"});
 }
 
 DodajArtykulDialog::~DodajArtykulDialog()

@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QDialog>
 #include "dodajartykuldialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -19,10 +18,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-
-
 private slots:
-    void on_pushButtonDodaj_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
