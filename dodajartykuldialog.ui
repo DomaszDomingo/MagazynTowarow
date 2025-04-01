@@ -29,42 +29,71 @@
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>40</y>
-     <width>110</width>
-     <height>86</height>
+     <x>30</x>
+     <y>30</y>
+     <width>172</width>
+     <height>88</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QLineEdit" name="lineEditNazwa"/>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Nazwa</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Kod EAN</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Jednostka</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEditEAN"/>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBoxJednostka">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <property name="text">
-        <string>sztuka</string>
-       </property>
+       <widget class="QLineEdit" name="lineEditNazwa"/>
       </item>
       <item>
-       <property name="text">
-        <string>litr</string>
-       </property>
+       <widget class="QLineEdit" name="lineEditEAN"/>
       </item>
       <item>
-       <property name="text">
-        <string>kilogram</string>
-       </property>
+       <widget class="QComboBox" name="comboBoxJednostka">
+        <item>
+         <property name="text">
+          <string>sztuka</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>litr</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>kilogram</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>metr</string>
+         </property>
+        </item>
+       </widget>
       </item>
-      <item>
-       <property name="text">
-        <string>metr</string>
-       </property>
-      </item>
-     </widget>
+     </layout>
     </item>
    </layout>
   </widget>
